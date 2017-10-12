@@ -3,7 +3,7 @@
 ### What is this repository for? ###
 
 A quick-start webpack template that includes a dev-server, react + babel and redux pre-install. 
-It also comes with environment-specific webpack build for convenience. 
+It also comes with environment-specific webpack builds for convenience. 
 
 ### How do I get set up? ###
 

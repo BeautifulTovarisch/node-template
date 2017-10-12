@@ -1,7 +1,7 @@
 {
   "name": "webpack-scaffolding",
   "version": "0.0.0",
-  "description": "Generalized template for building webpack front-end applications"
+  "description": "Front-end application template using webpack and react",
   "main": "main.js",
   "scripts": {
     "lint": "eslint src/scripts/**/* || true",
@@ -16,17 +16,19 @@
   "repository": {},
   "author": "",
   "dependencies": {
-    "babel-polyfill": "^6.23.0",    
+    "babel-polyfill": "^6.23.0",
+    "bluebird": "^3.4.7",
     "d3": "^4.6.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
     "react-router-dom": "^4.1.1",
-    "react-selectize": "^2.1.0",
     "redux": "^3.6.0",
     "redux-saga": "^0.14.3",
     "reselect": "^2.5.4",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.68.0",
     "yarn": "^0.27.5"
   },
   "devDependencies": {
@@ -49,6 +51,7 @@
     "mkdirp": "^0.5.1",
     "mocha": "^3.2.0",
     "mocha-loader": "^1.1.1",
+    "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
     "react-addons-test-utils": "^15.5.1",
     "react-css-modules": "^4.1.0",
@@ -63,5 +66,9 @@
     "webpack-dev-server": "^2.4.1",
     "webpack-merge": "^4.1.0"
   },
-  "-vs-binding": { "AfterBuild": [ "dev-build" ] }
+  "-vs-binding": {
+    "AfterBuild": [
+      "dev-build"
+    ]
+  }
 }

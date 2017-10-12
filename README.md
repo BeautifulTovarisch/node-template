@@ -20,7 +20,7 @@ This will allow importing from your directory structure logically without having
 
 These are some example aliases we've found to be helpful: 
 ```javascript
-'Tejas': path.resolve( __dirname, './Client/scripts/Visuals' ),
+'Tejas': path.resolve( __dirname, './Client/scripts/Tejas' ),
 'Redux': path.resolve( __dirname, './Client/scripts/Redux' ),
 'Config': path.resolve( __dirname, './Client/config.js' ),
 'Styles': path.resolve( __dirname, './Client/styles' ),

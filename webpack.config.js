@@ -1,8 +1,6 @@
 ﻿const path = require( 'path' );
 const webpack = require( 'webpack' );
 
-// ./src/scripts/**/*-spec.js
-
 module.exports = {
     entry: [
         'babel-polyfill',
@@ -52,21 +50,6 @@ module.exports = {
               ]
           },
           {
-              test: /\.less$/,
-              exclude: /node_modules/,
-              loaders: [
-                {
-                    loader: 'style-loader?sourceMap'
-                },
-                {
-                    loader: 'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
-                },
-                {
-                    loader: 'less-loader'
-                }
-              ]
-          },
-          {
               test: /\.css$/,
               exclude: [
                 path.resolve( __dirname, 'styles' ),
@@ -108,12 +91,12 @@ module.exports = {
     },
     resolve: {
         alias: {
-            'Redux': path.resolve( __dirname, './Client/scripts/Redux' ),
-            'Config': path.resolve( __dirname, './Client/config.js' ),
-            'Styles': path.resolve( __dirname, './Client/styles' ),
-            'Visuals': path.resolve( __dirname, './Client/scripts/Visuals' ),
-            'Utilities': path.resolve( __dirname, './Client/scripts/Utilities' ),
-            'Components': path.resolve( __dirname, './Client/scripts/Components' )
+            // 'Redux': path.resolve( __dirname, './Client/scripts/Redux' ),
+            // 'Config': path.resolve( __dirname, './Client/config.js' ),
+            // 'Styles': path.resolve( __dirname, './Client/styles' ),
+            // 'Visuals': path.resolve( __dirname, './Client/scripts/Visuals' ),
+            // 'Utilities': path.resolve( __dirname, './Client/scripts/Utilities' ),
+            // 'Components': path.resolve( __dirname, './Client/scripts/Components' )
         }
     },
     plugins: [

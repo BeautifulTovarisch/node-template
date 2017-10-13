@@ -8,6 +8,12 @@ A barbones node.js server with webpack set up.
 
 Start by `git clone ajre@bitbucket.org:cgis_development/node-scaffolding.git` into the desired directory. 
 
+---
+
+!! **_IMPORTANT_** !! After cloning down the project, remember to `git remote rm origin`. Otherwise your changes will modify this scaffolding project!
+
+---
+
 Then run `yarn` or `yarn install`
 to install the dependecies.
 
@@ -15,10 +21,6 @@ Spin up your node server ( run with nodemon for development ) by typing `npm sta
 This will also run `yarn run dev-build` for convenience. 
 
 After that's done, running `yarn run dev-server` will start the webpack-dev-server with hot-reloading enabled.
-
-# Important #
-
-After cloning down the project, remember to `git remote rm origin`. Otherwise your changes will modify this scaffolding project!
 
 ### Recommended ###
 

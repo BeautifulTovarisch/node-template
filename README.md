@@ -2,13 +2,17 @@
 
 ### What is this repository for? ###
 
-A quick-start webpack template that includes a dev-server, react + babel and redux pre-install. 
-It also comes with environment-specific webpack builds for convenience. 
+A barbones node.js server with webpack set up.   
 
 ### How do I get set up? ###
 
-Simply run `yarn` or `yarn install`
+Start by `git clone ajre@bitbucket.org:cgis_development/node-scaffolding.git` into the desired directory. 
+
+Then run `yarn` or `yarn install`
 to install the dependecies.
+
+Spin up your node server ( run with nodemon for development ) by typing `npm start`. 
+This will also run `yarn run dev-build` for convenience. 
 
 After that's done, running `yarn run dev-server` will start the webpack-dev-server with hot-reloading enabled.
 

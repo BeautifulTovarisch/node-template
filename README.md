@@ -16,6 +16,10 @@ This will also run `yarn run dev-build` for convenience.
 
 After that's done, running `yarn run dev-server` will start the webpack-dev-server with hot-reloading enabled.
 
+# Important #
+
+After cloning down the project, remember to `git remote rm origin`. Otherwise your changes will modify this scaffolding project!
+
 ### Recommended ###
 
 You can set up aliases in webpack.config.js; There are some examples commented out. 

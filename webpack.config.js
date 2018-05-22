@@ -3,10 +3,7 @@ const webpack = require( 'webpack' );
 
 module.exports = {
     entry: {
-        main: [
-            'babel-polyfill',
-            path.resolve( __dirname, 'client/index/index.jsx' )
-        ]
+        main: [ 'babel-polyfill', path.resolve( __dirname, 'client/index/index.jsx' ) ]
     },
     output: {
         path: path.resolve( __dirname, './' ),
@@ -26,6 +23,11 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader'
             },
+	    {
+		test: /\.spec.js$/,
+		exclude: /node_modules/,
+		loader: 'babel-loader'
+	    },
             {
                 test: /\.css$/,
                 include: /node_modules/,

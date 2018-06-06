@@ -13,7 +13,7 @@
         "dev-server": "webpack-dev-server --hot --colors --config webpack.dev.config.js --watch-poll",
         "api-server": "nodemon server.js",
         "production-build": "webpack --env=production --config webpack.production.config.js --colors",
-        "start": "run-p api-server dev-server watch"
+        "start": "run-p dev-server api-server"
     },
     "repository": {},
     "author": "",

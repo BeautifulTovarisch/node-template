@@ -19,6 +19,6 @@ test( 'it should work with negative numbers', t => {
 });
 
 test( '<Example /> component', t => {
-    const ex = render.create( <Example /> );
+    const ex = render.create( <Example /> ).toJSON();
     t.snapshot( ex );
 });

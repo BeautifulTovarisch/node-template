@@ -1,10 +1,12 @@
 'use strict';
 
+import React from 'react';
+
 import {
     render
 } from 'react-dom';
 
-const App = () =>
+export const App = () =>
       <div>
         <h1>Build Successful!</h1>
         <p>This file is located under /Client/scripts/</p>
@@ -14,3 +16,5 @@ render(
   <App />,
   document.getElementById( 'react-mount-point' )
 );
+
+export default App;

@@ -1,16 +1,24 @@
 // ( contrived ) Example function with failing test.
 // Edit add function to make test pass!
 
-const test = require( 'tape' );
+import test   from 'ava';
+import React  from 'react';
+import render from 'react-test-renderer';
+
+
+import Example from './sample-component.jsx';
 
 const add = ( a, b ) => a + b;
 
 test( 'it should add two numbers', t => {
-    t.equal( add( 1, 2 ), 3 );
-    t.end();
+    t.is( add( 1, 2 ), 3 );
 });
 
 test( 'it should work with negative numbers', t => {
-    t.equal( add( 1, -2 ), -1 );
-    t.end();
+    t.is( add( 1, -2 ), -1 );
+});
+
+test( '<Example /> component', t => {
+    const ex = render.create( <Example /> );
+    t.snapshot( ex );
 });

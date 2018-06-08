@@ -4,7 +4,7 @@
     "description": "node application with webpack-powered single-page-app",
     "main": "main.js",
     "scripts": {
-        "test": "ava",
+        "test": "ava --color",
         "dev-build": "webpack --env=dev --config webpack.dev.config.js --colors",
         "dev-server": "webpack-dev-server --hot --colors --config webpack.dev.config.js --watch-poll",
         "api-server": "nodemon server.js",

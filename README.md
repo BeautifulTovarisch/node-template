@@ -2,33 +2,26 @@
 
 ### What is this repository for? ###
 
-A barbones node.js server with webpack set up.   
+A barbones node.js server with webpack set up.
 
 ### How do I get set up? ###
 
-Start by `git clone ajre@bitbucket.org:cgis_development/node-scaffolding.git` into the desired directory. 
+Start by `curl --user <username>:<password> https://bitbucket.org/cgis_development/node-scaffolding.git/get/master.zip > node-scaffolding.zip`
 
----
+Afterwards, unzip the folder and rename it to the desired project.
 
-!! **_IMPORTANT_** !! After cloning down the project, remember to `git remote rm origin`. Otherwise your changes will modify this scaffolding project!
-
----
-
-Then run `yarn` or `yarn install`
+You should be able to run `yarn` or `yarn install`
 to install the dependecies.
 
-Spin up your node server ( run with nodemon for development ) by typing `npm start`. 
-This will also run `yarn run dev-build` for convenience. 
-
-After that's done, running `yarn run dev-server` will start the webpack-dev-server with hot-reloading enabled.
+Type `npm start` to spin up the application and webpack-dev-server. This should also start [AVA](https://github.com/avajs/ava) for automated testing.
 
 ### Recommended ###
 
-You can set up aliases in webpack.config.js; There are some examples commented out. 
+You can set up aliases in webpack.config.js; There are some examples commented out.
 
 This will allow importing from your directory structure logically without having to type the whole path.
 
-These are some example aliases we've found to be helpful: 
+These are some example aliases we've found to be helpful:
 ```javascript
 'Tejas': path.resolve( __dirname, './Client/scripts/Tejas' ),
 'Redux': path.resolve( __dirname, './Client/scripts/Redux' ),
@@ -37,7 +30,7 @@ These are some example aliases we've found to be helpful:
 'Utilities': path.resolve( __dirname, './Client/scripts/Utilities' ),
 'Components': path.resolve( __dirname, './Client/scripts/Components' )
 ```
-With Aliasing: 
+With Aliasing:
 ```javascript
 import {
     BarChart

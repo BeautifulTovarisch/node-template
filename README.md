@@ -6,15 +6,17 @@ This project is intended to be included as a submodule. It provides a barbones n
 
 ### How do I get set up? ###
 
-You can include this project as a submodule in another project by running: 
-
-`git submodule add git@bitbucket.org:cgis_development/node-scaffolding.git`.
-
-If you just want the source code: [Download this repository](https://bitbucket.org/cgis_development/node-scaffolding/get/e4d96f80f66f.zip)
+[Download this repository](https://bitbucket.org/cgis_development/node-scaffolding/get/e4d96f80f66f.zip)
 
 Afterwards, unzip the folder and rename it to the desired project.
 
-You should be able to run `yarn` or `yarn install`
+Run `yarn` or `yarn install`
 to install the dependecies.
 
 Type `npm start` to spin up the application. This should also start [AVA](https://github.com/avajs/ava) for automated testing.
+
+### Note ###
+
+This project has undergone a substantial rewrite to avoid duplicating configuration. The backend and frontend exist as isolated apps.
+
+You can pair this with the [Weback Template](https://bitbucket.org/cgis_development/webpack-scaffolding/src/master/) standalone front-end application.

@@ -6,7 +6,7 @@ A barbones node.js server with webpack set up.
 
 ### How do I get set up? ###
 
-Start by `curl --user <username>:<password> https://bitbucket.org/cgis_development/node-scaffolding.git/get/master.zip > node-scaffolding.zip`
+Start by [Downloading this repository](https://bitbucket.org/cgis_development/node-scaffolding/get/e4d96f80f66f.zip)
 
 Afterwards, unzip the folder and rename it to the desired project.
 

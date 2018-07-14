@@ -21,14 +21,14 @@ app.use( express.static( __dirname ) );
 
 /////////////// Routes ///////////////
 
-const index = require( path.resolve( 'server/index/router' ) );
+const index = require( path.resolve( 'index/router' ) );
 
 app.use( '/', index );
 
 if ( app.get( 'env' ) === 'development' ) {
     app.use( ( err, req, res, next ) => {
-        console.log( err );
-        return err ? res.status( err.status || 500 ).end() : next();
+	console.log( err );
+	return err ? res.status( err.status || 500 ).end() : next();
     });
 }
 

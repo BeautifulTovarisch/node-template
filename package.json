@@ -4,7 +4,7 @@
     "description": "node application with webpack-powered single-page-app",
     "main": "main.js",
     "scripts": {
-	"server": "nodemon server.js"
+	"server": "nodemon server.js",
 	"test": "ava --color",
 	"start": "run-p server test"
     },

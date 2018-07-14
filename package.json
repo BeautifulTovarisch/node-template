@@ -9,18 +9,13 @@
 	"start": "run-p server test"
     },
     "ava": {
-	"babel": {},
 	"watch": true,
 	"files": [
-	    "{client,server}/**/*.spec.js",
+	    "**/*.spec.js",
 	    "!node_modules/"
 	],
 	"sources": [
-	    "{client,server}/**/*.{js,jsx}",
-	    "!*.bundle.js"
-	],
-	"require": [
-	    "babel-register"
+	    "**/*.js"
 	]
     },
     "repository": {},

@@ -6,7 +6,7 @@ This project is intended to be included as a submodule. It provides a barbones n
 
 ### How do I get set up? ###
 
-[Download this repository](https://bitbucket.org/cgis_development/node-server/get/310000d8ad93.zip)
+[Download this repository](https://bitbucket.org/cgis_development/node-server/get/master.zip)
 
 Afterwards, unzip the folder and rename it to the desired project.
 

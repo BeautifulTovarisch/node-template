@@ -9,7 +9,7 @@ const bodyParser     = require( 'body-parser' );
 const methodOverride = require( 'method-override' );
 
 const APP_PORT = process.env.PORT || 2305;
-const APP_HOST = process.env.HOST || 'localhost';
+const APP_HOST = process.env.HOST || '0.0.0.0';
 
 /////////////// MiddleWares ///////////////
 

@@ -1,7 +1,7 @@
 {
-    "name": "node-scaffolding",
+    "name": "node-server",
     "version": "0.0.0",
-    "description": "node application with webpack-powered single-page-app",
+    "description": "standalone node server starter template"
     "main": "main.js",
     "scripts": {
 	"server": "nodemon server.js",

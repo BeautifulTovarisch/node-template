@@ -1,7 +1,7 @@
 {
     "name": "node-server",
     "version": "0.0.0",
-    "description": "standalone node server starter template"
+    "description": "standalone node server starter template",
     "main": "main.js",
     "scripts": {
 	"server": "nodemon server.js",
